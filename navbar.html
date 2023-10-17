@@ -6,6 +6,8 @@
     <title>Ibadantechexpo</title>
     <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
     <link rel="shortcut icon" href="Image/logo-7b0a9caa.svg" type="Image/svg">
+    <script src="/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="/bootstrap-5.3.2-dist/js/bootstrap.js"></script>
 
 <style>
   body{
@@ -34,7 +36,7 @@
   background-image: url(Image/Venue-1-38edfbf0.png);
   width: 100%;
   height: 90vh;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
 }
 
 .card1{
@@ -80,14 +82,53 @@
 }
 .seeme{
   background-image: linear-gradient(to right, #ca9003, #5576cf,  #5576cf);
+  width: 100%;
+}
+.ibd_tech_expo_img{
+  width :90%;
+}
+.tech_img{
+  width: 300px;
+  margin-left: 100px;
+}
+.cyclic{
+  margin-left: 50px;
+}
+#month{
+  margin-left: -60px;
+}
+#nav_id{
+  width: 100%;
+}
+@media screen and (max-width:600px) {
+     .tech_img{
+      width: 150px;
+     }
+     .cyclic{
+        margin-left: 70px;
+
+      } 
+    #month{
+      margin-left: 50px;
+    }
+    .ibd_tech_expo_img{
+      width :70%;
+    }
+    .seeme{
+      width: 90%;
+    }
+    #nav_id{
+      width: auto;
+      position: fixed;
+    }
 }
 </style>
     
 </head>
-<body>
+<body style="width: auto;">
     
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary col-sm col-md-auto col-lg col-xxl col-xs col-xl" style="position: fixed; z-index: 1; width: 100%;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary col-sm col-md-auto col-lg col-xxl col-xs col-xl" style="position: fixed; z-index: 1; " id="nav_id">
         <div class="container-fluid">
           <a class="navbar-brand ms-5" href="#"><img src="Image/logo-7b0a9caa.svg" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -126,46 +167,53 @@
 
       <main>
         <div>
-            <img src="Image/ibd-7e92bb92.svg" class="ms-5 py-5" width="90%"  alt="">
+            <img src="Image/ibd-7e92bb92.svg" class="ms-5 py-5 ibd_tech_expo_img"  alt="" >
         </div>
       </main>
+        <div class="row col-12">
+          
+        <div class="fs-5 text-primary col-md-4 ms-5">
+          <b>MAIDEN EDITION</b>
+          <img src="Image/line-46ed24ac.svg" style="width: 250px;" alt="">   
+        </div>
+        <div class="col-md-3 cyclic">
+          <img src="Image/star-06b2c062.svg"  class="me-3 ms-5 animate-rotate rounded-circle" alt="" style="border: 1px solid #00a877; padding: 5px;">
+        </div>
+        <div class="col-md-4" id="month">     
+           <img src="Image/line-46ed24ac.svg" style="width: 250px;" alt="">        
+           <b class="fs-5 text-primary">September 9, 2023</b>
 
-      <section class="d-flex justify-content-center col-lg col-sm col-xs  col-md col-xxl col-xl">
-        <div class="fs-5 text-primary"><h4>MAIDEN EDITION</h4></div>
-        <div><img src="Image/line-46ed24ac.svg" class="me-3" style="width: 250px;" alt=""></div>
-        <div><img src="Image/star-06b2c062.svg"  class="me-3 ms-5 animate-rotate rounded-circle" alt="" style="border: 1px solid #00a877; padding: 5px;"></div>
-        <div><img src="Image/line-46ed24ac.svg" class="ms-5 me-2" style="width: 250px;" alt=""></div>
-        <div class="fs-5 text-primary"><h4>September 9, 2023</h4></div>
-      </section>
+        </div>
+        </div>
+      <!-- <section class="d-flex justify-content-center col-lg col-sm col-xs  col-md col-xxl col-xl">
+      </section> -->
 
-      <div class="d-flex gap-4 ms-4 me-4 my-5 col-lg col-xs col-md col-xxl">
-        <button class="w-100 p-3 fs-4 text-primary" style="background-color: #fdb915; border: none; font-weight: 700;">BUY TICKETS</button>
-        <button class="btn btn-primary bg-white w-100 text-primary p-3 fs-4" style="font-weight: 700;" >BECOME A SPONSOR</button>
+      <!-- <div class="d-flex gap-4 ms-4 me-4 my-5 col-lg col-xs col-md col-xxl">
+      </div> -->
+      <div class="row col-12 justify-content-center mt-5">
+        
+        <button class="p-3 fs-4 text-primary col-md-3" style="background-color: #fdb915; border: none; font-weight: 700; width: 40%;">BUY TICKETS</button>
+        <button class=" btn btn-primary bg-white ms-2 text-primary p-3 fs-4 col-md-3 " style="font-weight: 700; width: 40%;" >BECOME A SPONSOR</button>
       </div>
 
-      <section class="seeme text-center text-white py-4 col-lg col-xs col-md col-xxl" style="background-color: #6379b6;">
-       <div>
+      <section class="seeme text-center text-white  mt-5" style="background-color: #6379b6; ">
         <h1>Venue:</h1>
         <p class="fs-4">The International Cnference Center, Agbowo, Ibadan.</p>
-       </div>
-
-       <div>
         <h1>Date:</h1>
         <p class="fs-4">Saturday, September 9th, 2023.</p>
-       </div>
       </section>
+        <div class="row col-12">
+          <div class="col-md-6">
+            <img src="Image/tit-514f3678.svg" style="border-bottom: 3px solid #fdb915; width: 320px;" class="ms-2" alt="" id="tech_img">
+            <p class="w-75 ms-4 py-4">
+              Welcome to Ibadan Tech Expo - a dynamic and vibrant gathering that celebrates the world of technology and innovation in Ibadan, Nigeria's largest city by landmass. The Ibadan Tech Expo aims to create an inclusive and engaging environment that brings together a diverse community of tech enthusiasts, professionals, and stakeholders. Whether you're a seasoned industry veteran or a newcomer looking to explore the exciting possibilities of the tech scene, this event is tailor-made for you.
+            </p>
+          </div>
+            <img src="Image/Poster 3 1-ed55da9d.svg"  class="col-md-4" alt="">
+        </div>
+      <!-- <section class="d-flex text-primary col-lg col-xs col-md col-xxl" style="margin-top: 13%;" >
 
-      <section class="d-flex text-primary col-lg col-xs col-md col-xxl" style="margin-top: 13%;" >
-        <div>
-          <img src="Image/tit-514f3678.svg" style="border-bottom: 3px solid #fdb915;" alt="">
-          <p class="w-75 ms-4 py-4">
-            Welcome to Ibadan Tech Expo - a dynamic and vibrant gathering that celebrates the world of technology and innovation in Ibadan, Nigeria's largest city by landmass. The Ibadan Tech Expo aims to create an inclusive and engaging environment that brings together a diverse community of tech enthusiasts, professionals, and stakeholders. Whether you're a seasoned industry veteran or a newcomer looking to explore the exciting possibilities of the tech scene, this event is tailor-made for you.
-          </p>
-        </div>
-        <div>
-          <img src="Image/Poster 3 1-ed55da9d.svg" width="600px" style="position: relative; top: -90px;" alt="">
-        </div>
-      </section>
+      </section> -->
 
       <section>
         <h1 class="ms-5 me-5" style="font-size: 70px; font-weight: 700; color: #224093; border-bottom: 3px solid #fdb915 ;" >VENUE</h1>
@@ -175,7 +223,7 @@
       </div>
 
       <section class="container">
-        <h1  class="ms-5 me-5" style="font-size: 70px; font-weight: 700; color: #224093; border-bottom: 3px solid #fdb915 ;">SPEAKERS</h1>
+        <h1  class="ms-5 me-5" style="font-size: 50px; font-weight: 700; color: #224093; border-bottom: 3px solid #fdb915 ;">SPEAKERS</h1>
         <div  class="row">
           <div class="col-sm-12 col-md-6 col-lg-3">
               <img src="Image/PSpeaker1-73bf4300.png" alt="">
@@ -265,7 +313,12 @@
 
 
     <section class="d-flex ">
-      <div class="card1 ms-5 mt-5 rounded" style="width: 25rem;">
+      
+
+    </section>
+
+    <div class="row col-12">
+      <div class="card1 ms-5 mt-5 rounded col-md-3" style="width: 25rem;">
         <div class="card-body">
           <small class="card-title">MARK ZUCKERBERG</small>
           <h3 class="card-title">Regular
@@ -286,7 +339,7 @@
       </div>
 
       
-      <div class="card2 ms-5 mt-5" style="width: 27rem; padding: 20px;">
+      <div class="card2 ms-2 mt-5 col-md-3" style="width: 27rem; padding: 20px;">
         <div class="card-bo">
           <small class="card-title">ELON MUSK</small>
           <h3 class="card-title">VIP
@@ -303,7 +356,7 @@
         </div>
       </div>
 
-      <div class="card3 ms-5 mt-5 rounded" style="width: 27rem; padding: 20px;">
+      <div class="card3 ms-2 mt-5 rounded col-md-3" style="width: 27rem; padding: 20px;">
         <div class="card-body">
           <small class="card-title">JEFF BEZOS</small>
           <h3 class="card-title">Standard
@@ -318,7 +371,7 @@
         </div>
       </div>
 
-    </section>
+    </div>
 
 
     <section class="col-lg col-xs col-md col-xxl">
@@ -336,23 +389,25 @@
 
     <section class="galore text-white mt-5 col-lg col-xs col-md col-xxl">
 
-      <section class="d-flex" style="padding: 50px 0px; margin-left: 50px;">
-        <div>
-          <h1 class="pt-5" style="margin-top: 90px;">Tech Prizes Galore</h1>
-          <p style="width: 400px;">By obtaining a ticket for the Ibadan Tech Expo event,
-            you enter the chance to win incredible tech prizes,
-            including laptops, phones, AirPods,
-            smartwatches, 5G internet mifis, headsets, VR sets, wireless mice, and televisions.</p>
-        </div>
-
-        <div>
-          <img class="ms-5  Laptop" src="Image/Laptop-2caec73e.png" alt=""    style="margin-top: 160px;" width="200px">
-        </div>
-        <div>
-          <img class="ms-5" src="Image/Girlie-47d2b4d8.png" width="400px"  alt="">
-        </div>
-        <div>
-          <img class="ms-5 watch" src="Image/Watch-5dc439b4.png" width="150px" alt="">
+      <section style="padding: 50px 0px; margin-left: 50px; width: auto;">
+        <div class="row col-12">
+          <div class="col-md-3">
+            <h1 class="pt-5" style="margin-top: 90px;">Tech Prizes Galore</h1>
+            <p style="width: 400px;">By obtaining a ticket for the Ibadan Tech Expo event,
+              you enter the chance to win incredible tech prizes,
+              including laptops, phones, AirPods,
+              smartwatches, 5G internet mifis, headsets, VR sets, wireless mice, and televisions.</p>
+          </div>
+  
+          <div class="col-md-3">
+            <img class="ms-5  Laptop" src="Image/Laptop-2caec73e.png" alt=""    style="margin-top: 160px;" width="200px">
+          </div>
+          <div class="col-md-3">
+            <img class="" src="Image/Girlie-47d2b4d8.png" width="400px"  alt="">
+          </div>
+          <div class="col-md-3">
+            <img class="ms-4 watch" src="Image/Watch-5dc439b4.png" width="150px" alt="">
+          </div>
         </div>
       </section>
     </section>
@@ -457,7 +512,7 @@
        <ul> Partners</ul> 
       </ul>
     </div> -->
-   </footer>
+   <!-- </footer> -->
 
 
 
